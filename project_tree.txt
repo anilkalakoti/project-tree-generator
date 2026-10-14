@@ -1,0 +1,31 @@
+rag-chatbot/
+├── docker-compose.yml
+├── entrypoint.sh
+├── server/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── src/
+│       ├── config/
+│       │   └── environment.ts
+│       ├── db/
+│       │   └── sqliteStore.ts
+│       ├── embeddings/
+│       │   └── ollama.ts
+│       ├── services/
+│       │   ├── cleanupWorker.ts
+│       │   └── parentIngestion.ts
+│       ├── workflow/
+│       │   ├── state.ts
+│       │   ├── nodes.ts
+│       │   └── graph.ts
+│       └── server.ts
+└── client/
+    ├── Dockerfile
+    ├── package.json
+    ├── tsconfig.json
+    ├── index.html
+    └── src/
+        ├── App.tsx
+        ├── main.tsx
+        └── index.css
